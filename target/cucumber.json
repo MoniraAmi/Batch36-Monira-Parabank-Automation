@@ -1,0 +1,145 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User should be logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2024-01-17T18:19:43.281Z",
+        "line": 18,
+        "name": "As a logged-in user, I want to logout successfully Parabank website",
+        "description": "",
+        "id": "parabank-logout-testing;as-a-logged-in-user--i-want-to-logout-successfully-parabank-website;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "open the browser",
+            "match": {
+              "location": "com.stepdef.JanuarySixthStepdef.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "pass the URL \"https://parabank.parasoft.com/parabank/index.htm?ConnType\u003dJDBC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://parabank.parasoft.com/parabank/index.htm?ConnType\u003dJDBC\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.stepdef.JanuarySixthStepdef.pass_the_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter username \"monira\" in the Username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"monira\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.stepdef.JanuarySixthStepdef.enter_username_in_the_username_field(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "enter password \"123456\" in the Password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.stepdef.JanuarySixthStepdef.enter_password_in_the_password_field(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click on Login",
+            "match": {
+              "location": "com.stepdef.JanuarySixthStepdef.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click on Log Out",
+            "match": {
+              "location": "com.stepdef.JanuarySixthStepdef.click_on_log_out()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate logout is successful",
+            "match": {
+              "location": "com.stepdef.JanuarySixthStepdef.validate_logout_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@TC1"
+          }
+        ]
+      }
+    ],
+    "name": "Parabank logout testing",
+    "description": "  Description: User should already have an account",
+    "id": "parabank-logout-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/logout.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
